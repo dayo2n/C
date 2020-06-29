@@ -2,10 +2,9 @@
 
 void swap(int *a, int *b)
 {
+    int temp;
 
-    puts("swap()");
-
-    int temp = *a;
+    temp = *a;
     *a = *b;
     *b = temp;
 }
@@ -16,11 +15,11 @@ int main(void)
     int a, b;
     scanf("%d", &a);
     scanf("%d", &b);
-    printf("a = %d, b = %d\n", a, b);
+    printf("%d, %d\n", a, b);
 
     swap(&a, &b);
 
-    printf("a = %d, b = %d", a, b);
+    printf("%d, %d\n", a, b);
 
     return 0;
 }
